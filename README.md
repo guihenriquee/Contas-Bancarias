@@ -1,18 +1,20 @@
-## Getting Started
+# Contas Bancárias - Projeto Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este projeto em Java tem como objetivo simular um sistema simples de consulta de tipos de contas bancárias e suas respectivas taxas de juros.
 
-## Folder Structure
+## Descrição
 
-The workspace contains two folders by default, where:
+O programa recebe o tipo de conta bancária (como "CONTA_POUPANCA", "CONTA_CORRENTE" ou "CONTA_INVESTIMENTO") e exibe a taxa de juros correspondente a cada tipo de conta. Caso o tipo de conta fornecido não esteja na lista, o programa retorna "CONTA INEXISTENTE".
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+### Exemplo de execução:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Se o usuário digitar `CONTA_POUPANCA`, o programa irá exibir: `0.05%`.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
 
-## Dependency Management
+### Estrutura do Código
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- O programa solicita ao usuário que insira o tipo da conta bancária (ex: "CONTA_POUPANCA").
+
+- Utiliza a estrutura switch para verificar o tipo da conta e imprimir a taxa de juros correspondente.
+
+- Se o tipo da conta não estiver entre as opções definidas, a mensagem "CONTA INEXISTENTE" será exibida.
